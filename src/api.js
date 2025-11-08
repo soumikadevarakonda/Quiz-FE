@@ -2,9 +2,8 @@ import axios from "axios";
 
 const BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:30083";
 
-const USER_API_URL = "http://localhost:30083/api/users";
-const QUIZ_API_URL = "http://localhost:30083/api/quizzes";
-
+const USER_API_URL = `${BASE_URL}/api/users`;
+const QUIZ_API_URL = `${BASE_URL}/api/quizzes`;
 
 // Signup
 export async function signup(data) {
